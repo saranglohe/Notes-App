@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="hotel.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+
+</head>
+<body>
+
+    <header>
+        <div id="container">
+
+
+            <div id="logo">.Hotels Luxury</div>
+
+            <div ><input type="text" placeholder="Search Hotels...." id="search"></div>
+
+
+
+
+            <div id="menu"> 
+
+            <div class="home"><button class="homebtn"><a class="home" href="#">HOME</a></button></div>
+            <div ><button class="aboutbtn"><a class="about" href="#aboutus">ABOUT US</a></button></div>
+            <div class="rooms"><button class="roomsbtn"><a class="rooms" href="#rooms">ROOMS</a></button></div>
+            <div class="contact"><button class="contactbtn"><a class="contact" href="#">CONTACT</a></button></div>
+            <div class="booknow"><button class="booknowbtn">BOOK NOW</button></div>
+        </div>
+       
+
+
+
+
+<!-- 
+            <div class="home"><button class="home">HOME</button></div>
+            <div class="about"><button class="aboutbtn"><a class="about" href="#aboutus">ABOUT US</a></button></div>
+            <div class="rooms"><a class="rooms" href="#">ROOMS</a></div>
+            <div class="contact"><button class="contact">CONTACT</button></div>
+            <div  class="booknow"><button class="booknow">BOOK NOW</button></div>
+          </div> -->
+
+       
+
+    </header>
+     
+   
+    <div class="container">
+
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide"><img id="swiper-slide1" src="hotel/beautiful-luxury-outdoor-swimming-pool-hotel-resort.jpg"></div>
+              <div class="swiper-slide"><img src="hotel/Shangri-La-Shard-London-Suite-Lounge-Feature-1920x833.jpg"></div>
+              <div class="swiper-slide"><img id="swiper-slide3" src="hotel/8002796-santorini-secret-oia.jpg"></div>
+           
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+          
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          
+            <!-- If we need scrollbar -->
+           
+          </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script>
+    const swiper = new Swiper('.swiper', {
+        autoplay:{
+            delay:3000,
+            disableOnInteraction:false,
+        },
+ 
+  loop: true,
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+    clickable:true,
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  // And if we need scrollbar
+  
+});
+</script>
+    
+
+    
+
+    <div id="bookroom">
+
+        <!-- <div id="bookyourrooms">Book Your Rooms</div> -->
+        <span  id="bookyourrooms1">Book Your Rooms</span>
+
+        <!-- <div id="Check-Avability"> -->
+            <input  class="bookyourrooms" type="date" placeholder="Arrival Date">
+            <input  class="bookyourrooms" type="date" placeholder="Departure Date">
+            <input  class="bookyourrooms" type="number" placeholder="Adults">
+            <input  class="bookyourrooms" type="number" placeholder="Children">
+            <button class="Check-Avability" class="Check-Avability">Check-Avability</button> 
+           
+
+        <!-- </div> -->
+        
+    </div>
+
+
+
+   
+   
+   <a name="rooms"></a>
+
+   <section id="roomsbookingimg">
+    <div> <img class="roomsbookingimgg" src="hotel/luxury-bedroom-hotel.jpg" alt=""><div class="pricedaybook"><div ><span class="price">₹3100</span><p class="day">Per Night</p></div><div><button class="booknowmain">BOOK NOW</button></div></div></div>
+    <div> <img class="roomsbookingimgg" src="hotel/7041399_447.jpg" alt=""><div class="pricedaybook"><div ><span class="price">₹4200</span><p class="day">Per Night</p></div><div><button class="booknowmain">BOOK NOW</button></div></div></div>
+    <div> <img class="roomsbookingimgg" src="hotel/luxury-bedroom-suite-resort-high-rise-hotel-with-working-table.jpg" alt=""><div class="pricedaybook"><div ><span class="price">₹3400</span><p class="day">Per Night</p></div><div><button class="booknowmain">BOOK NOW</button></div></div></div>
+    <div> <img class="roomsbookingimgg" src="hotel/3d-rendering-beautiful-luxury-bedroom-suite-hotel-with-tv.jpg" alt=""><div class="pricedaybook"><div ><span class="price">₹4500</span><p class="day">Per Night</p></div><div><button class="booknowmain">BOOK NOW</button></div></div></div>
+    <div> <img class="roomsbookingimgg" src="hotel/3d-rendering-loft-scandinavian-living-room-with-working-table-bookshelf.jpg" alt=""><div class="pricedaybook"><div ><span class="price">₹4900</span><p class="day">Per Night</p></div><div><button class="booknowmain">BOOK NOW</button></div></div></div>
+
+   
+   
+   </section>
+   <br>
+   <br>
+   
+
+
+   <div class="payment">
+    <h1 class="payTitle">Personal Information</h1>
+    <label>FirstName and LastName</label>
+    <input type="text" placeholder="Sarang Lohe" class="payInput">
+    <label>Phone Number</label>
+    <input type="text" placeholder="Phone Number" class="payInput">
+    <label>Email</label>
+    <input type="text" placeholder="Email" class="payInput">
+    <h1 class="payTitle">Card Information</h1>
+    <!-- <div class="cardIcons">
+        <img src="./img/visa.png" width="40" alt="" class="cardIcon">
+        <img src="./img/master.png" alt="" width="40" class="cardIcon">
+    </div> -->
+    <input type="password" class="payInput" placeholder="Card Number">
+    <div class="cardInfo">
+        <input type="text" placeholder="mm" class="payInput sm">
+        <input type="text" placeholder="yyyy" class="payInput sm">
+        <input type="text" placeholder="cvv" class="payInput sm">
+    </div>
+    <button class="payButton">Checkout!</button>
+    <span class="close">X</span>
+</div>
+     
+  
+   <br>
+   <br>
+   <hr>
+
+   
+   <section id="ourservices">
+
+    <div>
+        <p id="ourservicess">OUR SERVICES</p>
+        <p class="ourservicepara">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Cum, quod. Alias architecto tempore est dolor eos fugiat nulla
+         delectus. Exercitationem dolore architecto assumenda excepturi
+          voluptatem. Aspernatur est unde expedita quae.</p></div>
+
+    <div><img class="ourserviceimg" src="hotel/family-occasion-brunch.jpg"></div>
+
+   </section>
+
+   <hr>
+
+
+   <div id="ourgallary"> OUR GALLARY</div>
+
+   <div id="ourgallaryimgg">
+    <div><img class="ourgallaryimg" src="hotel/chef-cooking-food-restaurant-kitchen.jpg"></div>
+    <div><img class="ourgallaryimg" src="hotel/3d-rendering-beautiful-luxury-bedroom-suite-hotel-with-tv.jpg"></div>
+    <div><img class="ourgallaryimg" src="hotel/restaurant-interior.jpg"></div>
+    <div><img class="ourgallaryimg" src="hotel/wide-high-angle-shot-private-pool-with-ocean-background-during-sunset-hour.jpg"></div>
+    <div><img class="ourgallaryimg" src="hotel/couple-wearing-aprons-coffee-shop.jpg"></div>
+   </div>
+
+   <hr>
+
+
+
+   <section id="aboutus">
+    <div>
+        <a name="aboutus"></a>
+        <p id="aboutus">ABOUT US</p>
+
+        <p id="aboutuspara">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Tempore ex, autem corporis vel facilis illum fugiat animi 
+            delectus a maxime minima dignissimos provident voluptates 
+            nihil nisi, consectetur reiciendis? Voluptas, earum. Lorem ipsum dolor, 
+            sit amet consectetur adipisicing elit. Deleniti praesentium asperiores 
+            iure non possimus sed. Fugit consequuntur voluptatum laborum, illo 
+            assumenda eligendi quis numquam iusto rem, voluptas id suscipit commodi!</p>
+            <button id="aboutusbutton">ABOUT US</button>
+    </div>
+    <div>
+        <img id="lobbyimg" src="hotel/STAAH-guests-at-hotel-reception-check-in.png">
+       
+    </div>
+   </section>
+
+   <footer>
+    <button class="submitall">submit</button>
+   
+
+   </footer>
+
+
+
+   
+  
+
+<script src="hotel.js"></script>   
+</body>
+</html>
