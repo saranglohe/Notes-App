@@ -1,19 +1,19 @@
 .note-container {
-    height: 100%;
-    /* border: 1px solid red; */
-    overflow: hidden;
-    
-
-  }
+  height: 100%;
+  /* border: 1px solid red; */
+  overflow: hidden;
   
-  .note-container h2 {
-    margin-bottom: 20px;
-  }
-  
-  .note-container_notes {
-    height: 90%;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
 
-  }
+}
+
+.note-container h2 {
+  margin-bottom: 20px;
+}
+
+.note-container_notes {
+  height: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+
+}
